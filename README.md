@@ -1,6 +1,6 @@
 # Password
 
-Show all possible passwords by permuting the shape of the letters of the input.
+Show all possible passwords by permuting the each of the input letter.
 
 For example, `Sam`'s password can be written as `$am` or `5@m`.
 
