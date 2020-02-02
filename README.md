@@ -4,6 +4,8 @@ Show all possible passwords by permuting the shape of the letters of the input.
 
 For example, `Sam`'s password can be written as `$am` or `5@m`.
 
+Use this repo responsibly.
+
 ## Building
 
 ```bash
