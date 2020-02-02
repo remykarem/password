@@ -1,8 +1,12 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-#define NUMLETTERS 26
 #define OFFSET 97
+#define MAXSIZE 100
+#define NUMLETTERS 26
 #define MAXVARIATIONS 4
+
 #define init_array(arr)               \
     for (int i = 0; i < MAXSIZE; i++) \
     {                                 \
@@ -86,4 +90,26 @@ void increment(int number[], const int max[], int idx, char name[],
         printf("%s\n", name);
         increment(number, max, 0, name, oldname);
     }
+}
+
+void show_passwords(char name[])
+{
+    char password[MAXSIZE];
+    int len, perms;
+    int *arr, *max;
+
+    strcpy(password, name);
+
+    len = (int)strlen(name);
+    arr = (int *)malloc((len + 1) * sizeof(int)); // add an extra space
+    max = (int *)malloc(len * sizeof(int));
+    init_array(arr);
+    perms = get_maxes(max, password, len);
+
+    printf("%s\n", name);
+    increment(arr, max, 0, password, name);
+    printf("Total no. of permutations: %d\n", perms);
+
+    free(arr);
+    free(max);
 }
