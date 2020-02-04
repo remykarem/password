@@ -1,4 +1,9 @@
+#ifndef REMY_DICTIONARY_H
+#define REMY_DICTIONARY_H
+
 #define NUMLETTERS 26
 #define MAXVARIATIONS 4
 
 extern const char letters[NUMLETTERS][MAXVARIATIONS];
+
+#endif//REMY_DICTIONARY_H
