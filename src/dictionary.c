@@ -1,5 +1,4 @@
-#define NUMLETTERS 26
-#define MAXVARIATIONS 4
+#include "dictionary.h"
 
 const char letters[NUMLETTERS][MAXVARIATIONS] = {
     { 'a', 'A',  '@', '\0' },

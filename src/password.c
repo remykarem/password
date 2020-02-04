@@ -1,7 +1,10 @@
+#include "dictionary.h"
+#include "password.h"
+
+//External deps
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "dictionary.h"
 
 #define OFFSET 97
 #define MAXSIZE 100
@@ -70,6 +73,7 @@ void show_passwords(char name[])
     int *arr, *max;
 
     strcpy(password, name);
+    printf("starting...\n");
 
     len = (int)strlen(name);
     arr = (int *)malloc((len + 1) * sizeof(int)); // add an extra space
