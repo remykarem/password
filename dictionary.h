@@ -1,7 +1,7 @@
 #define NUMLETTERS 26
 #define MAXVARIATIONS 4
 
-const static char letters[NUMLETTERS][MAXVARIATIONS] = {
+const char letters[NUMLETTERS][MAXVARIATIONS] = {
     { 'a', 'A',  '@', '\0' },
     { 'b', 'B', '\0', '\0' },
     { 'c', 'C', '\0', '\0' },
