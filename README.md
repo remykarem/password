@@ -6,11 +6,16 @@ For example, `Sam`'s password can be written as `$am` or `5@m`.
 
 Use this repo responsibly.
 
-## Building
+## Setting up
 
-```bash
-gcc -std=c99 -Wall -Werror -pedantic main.c -o showpasswords
-```
+Make sure you have [make](https://www.gnu.org/software/make/) installed first.
+Once make is installed pull this repository and `cd` into it.
+
+- To build the project: `make`
+- To clean the project: `make clean`
+
+Take note that the [Makefile](Makefile) will need to be modified if you are not using Windows.
+
 
 ## Usage
 
