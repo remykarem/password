@@ -20,7 +20,7 @@ Take note that the [Makefile](Makefile) will need to be modified if you are not 
 ## Usage
 
 ```bash
-./showpasswords john
+./showpasswords.exe john
 ```
 
 Output:
