@@ -4,7 +4,7 @@ OBJECTS=$(SOURCE_DIR)/main.c $(SOURCE_DIR)/password.c $(SOURCE_DIR)/dictionary.c
 CFLAGS=-std=c99 -Wall -Werror -pedantic
 
 #need to have .exe extension for windows
-TARGET=showpassword.exe
+TARGET=showpasswords.exe
 
 
 all: 
