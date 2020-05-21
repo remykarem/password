@@ -14,5 +14,5 @@ all:
 #for linux use rm $(TARGET)
 #for windows use del $(TARGET)
 clean:
-	del $(TARGET)
+	rm $(TARGET)
 
